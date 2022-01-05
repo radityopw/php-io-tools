@@ -2,7 +2,7 @@
 
 function php_io_read_json($json_file){
 	$file_content = file_get_contents($json_file);
-	$json = json_decode($file_content);
+	$json = json_decode($file_content,TRUE);
 
 	return $json;
 }
